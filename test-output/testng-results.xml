@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-18T17:56:55 BST" name="Default suite" finished-at="2023-08-18T17:57:56 BST" duration-ms="60547">
+    <groups>
+    </groups>
+    <test started-at="2023-08-18T17:56:55 BST" name="Default test" finished-at="2023-08-18T17:57:56 BST" duration-ms="60547">
+      <class name="com.comar.tests.ComarTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.comar.tests.ComarTest@292b08d6]" started-at="2023-08-18T17:56:55 BST" name="setUp" finished-at="2023-08-18T17:57:48 BST" duration-ms="52888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testActualitesPage()[pri:0, instance:com.comar.tests.ComarTest@292b08d6]" started-at="2023-08-18T17:57:48 BST" name="testActualitesPage" finished-at="2023-08-18T17:57:55 BST" duration-ms="6825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testActualitesPage -->
+        <test-method signature="testSearch()[pri:0, instance:com.comar.tests.ComarTest@292b08d6]" started-at="2023-08-18T17:57:55 BST" name="testSearch" finished-at="2023-08-18T17:57:56 BST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.comar.tests.ComarTest@292b08d6]" started-at="2023-08-18T17:57:56 BST" name="tearDown" finished-at="2023-08-18T17:57:56 BST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.comar.tests.ComarTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
