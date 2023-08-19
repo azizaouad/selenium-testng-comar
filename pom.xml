@@ -38,4 +38,18 @@
 
 
   </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Utilisez la version appropriée -->
+            <configuration>
+                <source>17</source> <!-- Version source du compilateur -->
+                <target>17</target> <!-- Version cible du compilateur -->
+            </configuration>
+        </plugin>
+        <!-- Autres plugins -->
+    </plugins>
+</build>
 </project>
