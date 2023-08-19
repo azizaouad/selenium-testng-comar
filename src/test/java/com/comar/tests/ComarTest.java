@@ -1,15 +1,15 @@
 package com.comar.tests;
 
-// import java.util.concurrent.TimeUnit;
 
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
-// import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-// import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+
+
 import com.comar.pages.ActualitesPage;
 import com.comar.pages.HomePage;
 
@@ -18,7 +18,7 @@ public class ComarTest {
     private HomePage homePage;
     private ActualitesPage actualitesPage;
 
-    @BeforeTest
+    @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver",
                 "C://Users/Lenovo/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe");
@@ -32,7 +32,7 @@ public class ComarTest {
     @Test
     public void testActualitesPage() {
         actualitesPage = homePage.clickActualitesLink();
-        Assert.assertTrue(actualitesPage.isPageOpened(), "Actualités page not opened.");
+        Assert.assertTrue( "Actualités page not opened.",actualitesPage.isPageOpened());
 
     }
 
@@ -41,10 +41,10 @@ public class ComarTest {
         actualitesPage = homePage.clickActualitesLink();
         actualitesPage.enterSearchText("COMAR Assurances partenaire");
         actualitesPage.submitSearch();
-        Assert.assertTrue(actualitesPage.isSearchResultVisible(), "Search result not visible.");
+        Assert.assertTrue( "Search result not visible.",actualitesPage.isSearchResultVisible());
     }
 
-    @AfterTest
+    @After
     public void tearDown() {
         driver.quit();
     }
